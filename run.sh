@@ -2,8 +2,11 @@
 
 ROOT=$(cd $(dirname $0) && pwd)
 
+### C++ ###
+$ROOT/build/dist/bin/fw "$@"
+
 ### Java ###
-java -jar $(ls $ROOT/java/fw/target/exam2a-framework-*.jar) "$@"
+#java -jar $(ls $ROOT/java/fw/target/exam2a-framework-*.jar) "$@"
 
 ### Python ###
 # python $ROOT/python/src/exam2a-fw.pyc "$@"

@@ -2,8 +2,11 @@
 
 ROOT=$(cd $(dirname $0) && pwd)
 
+### C++ ###
+$ROOT/build/dist/bin/ai "$@"
+
 ### Java ###
-java -jar $(ls $ROOT/java/ai/target/exam2a-ai-*.jar) "$@"
+#java -jar $(ls $ROOT/java/ai/target/exam2a-ai-*.jar) "$@"
 
 ### Python ###
 # python $ROOT/python/src/exam2a-ai.pyc "$@"
